@@ -52,7 +52,7 @@ public class Contact {
                     name.add(new_name);
                     contact.add(new_number);
                     System.out.println("Contact Saved Successfully!");
-                } else if (new_number.startsWith("+92") && new_number.length() == 13 || new_number.contains(" ") && new_number.length() == 14) {
+                } else if (new_number.startsWith("+92") && new_number.length() == 13) {
                     name.add(new_name);
                     contact.add(new_number);
                     System.out.println("Contact Saved Successfully!");
@@ -95,3 +95,4 @@ public class Contact {
         menu(name,contact);
     }
 }
+
