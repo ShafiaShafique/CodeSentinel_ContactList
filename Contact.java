@@ -46,7 +46,7 @@ public class Contact {
         System.out.println("Enter Contact name: ");
         String new_name = sc.nextLine();
             System.out.println("Enter Contact Number: ");
-            String new_number = sc.nextLine();
+              String new_number = sc.nextLine().replace(" ","");
             if(new_number.matches("\\d+") || new_number.startsWith("+92")) {
                 if (new_number.startsWith("03") && new_number.length() == 11) {
                     name.add(new_name);
@@ -95,4 +95,5 @@ public class Contact {
         menu(name,contact);
     }
 }
+
 
